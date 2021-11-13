@@ -1,9 +1,9 @@
 package com.example.newsplayground.ui.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.AbsListView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -56,7 +56,7 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
                 is Resource.Error -> {
                     hideProgressBar()
                     response.message?.let { message ->
-                        Log.e(TAG, "Ошибка: $message")
+                        Toast.makeText(activity, "Ошибка: $message", Toast.LENGTH_SHORT).show()
                     }
                 }
                 is Resource.Loading -> {
