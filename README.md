@@ -1,5 +1,6 @@
 # NewsPlayground
 MVVM, Retrofit, Room, Coroutines,Glide
+
 BreakingNewFragment
 
 ![2021-11-13_23-12-43](https://user-images.githubusercontent.com/80970900/141657785-27b775f3-c452-4fd8-8b0d-760f85fe2b59.png)
